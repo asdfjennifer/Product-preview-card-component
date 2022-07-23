@@ -145,6 +145,10 @@ a {
     align-items: flex-end;
 }
 
+/* ===========================
+        MEDIA QUERIES
+============================== */
+
 @media only screen and (max-width: 501px) {
     main {
         display: block;
