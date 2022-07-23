@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+        GENERAL STYLES      
+
+colors: 
+hsl(158, 36%, 37%)
+hsl(30, 38%, 92%)
+hsl(212, 21%, 14%)
+hsl(228, 12%, 48%)
+hsl(0, 0%, 100%)
+
+font-family: 'Fraunces', serif;
+- Weights: 700
+
+font-family: 'Montserrat', sans-serif;
+- Weights: 500, 700
+
+- Font size (paragraph): 14px
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+============================ */
+
+body {
+    background: #F2E9E3;
+}
+
+main {
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+    color: hsl(228, 12%, 48%);
+    border-radius: 20px;
+    display: flex;
+    margin: 10vh 25%;
+    height: auto;
+    width: auto;
+}
+
+/* Product IMG */
+.leftDiv {
+    flex-basis: 50%;
+    background: url("img/image-product-desktop.jpg");
+    background-size: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+/* .leftDiv img {
+    max-width: 100%;
+    border-radius: 20px 0 0 20px;
+} */
+
+/* Info */
+.rightDiv {
+    flex-basis: 50%;
+}
+
+/* Inhalt rechtes div */
+section {
+    margin: 5vh 10%;
+}
+
+/* Perfume */
+h2 {
+    font-weight: 500;
+    font-size: 1vw;
+    letter-spacing: 6px;
+    margin-bottom: 4vh;
+}
+
+/* Gabrielle */
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 3vw;
+    margin-bottom: 4vh;
+    line-height: 6vh;
+}
+
+p {
+    font-size: 1vw;
+    margin-bottom: 4vh;
+    line-height: 4vh;
+}
+
+.prices {
+    display: flex;
+    height: 5vh;
+}
+
+/* 149 */
+span {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 3vw;
+}
+
+/* 169 */
+/* NOCH ZU BEARBEITEN */
+figure {
+    text-decoration: line-through;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5%;
+    font-size: 1.5vw;
+}
+
+button {
+    background: hsl(158, 36%, 37%);
+    font-size: 1vw;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 2vh 5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 4vh;
+    display: flex;
+}
+
+button:hover {
+    background: hsl(158, 31%, 50%);
+}
+
+/* h3::before {
+    content: url("/assets/img/icon-cart.svg");
+    margin-right: 5%;
+} */
+
+a {
+    text-decoration: none;
+    align-items: flex-end;
+}
+
+/* NOCH ZU BEARBEITEN */
+.cart {
+    align-items: flex-end;
+}
+
+@media only screen and (max-width: 501px) {
+    main {
+        display: block;
+        overflow: auto;
+        max-height: 63vh;
+        /* hidden scrollbar */
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        overflow-y: scroll;
+    }
+
+    main::-webkit-scrollbar {
+        display: none;
+        /* for Chrome, Safari, and Opera */
+    }
+
+    /* Product IMG */
+    .leftDiv {
+        background-size: cover;
+        height: 20vh;
+        border-radius: 20px 0 0 0;
+        background-position: center 35%;
+    }
+
+    .leftDiv img {
+        max-height: 20vh;
+        width: 100%;
+        object-fit: cover;
+        object-position: center 35%;
+    }
+
+    /* Perfume */
+    h2 {
+        font-size: 2vw;
+        margin-bottom: 1vh;
+    }
+
+    /* Gabrielle */
+    h1 {
+        font-size: 5vw;
+        margin-bottom: 1vh;
+    }
+
+    p {
+        font-size: 2vw;
+        margin-bottom: 1vh;
+    }
+
+    figure {
+        font-size: 2vw;
+    }
+
+    button {
+        font-size: 2vw;
+        padding: 2vh 10vw;
+        font-weight: 700;
+        margin: 2vh 5%;
+        display: flex;
+    }
+
+    .cart {
+        margin-right: 1%;
+        display: inline;
+    }
+}
