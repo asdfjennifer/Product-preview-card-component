@@ -6,4 +6,6 @@ Es wurde eine Produktvorschau mithilfe von HTML und CSS erstellt.
 
 Hier geht's zum Ergebnis: 
 
+https://asdfjennifer.github.io/Product-preview-card-component/
+
 
