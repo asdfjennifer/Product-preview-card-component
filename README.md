@@ -9,4 +9,4 @@ Hier geht's zum Ergebnis:
 https://asdfjennifer.github.io/Product-preview-card-component/
 
 
-![Screenshot](Screenshot.png)
+![Screenshot](https://user-images.githubusercontent.com/98667941/180604440-983838c9-6d5c-4d02-aa46-0b9b96999510.png)
