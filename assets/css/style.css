@@ -48,7 +48,7 @@ main {
 /* Product IMG */
 .leftDiv {
     flex-basis: 50%;
-    background: url("img/image-product-desktop.jpg");
+    background: url("../img/image-product-desktop.jpg");
     background-size: cover;
     border-radius: 20px 0 0 20px;
 }
